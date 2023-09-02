@@ -1,0 +1,31 @@
+{% extends "basic.html" %}
+
+{% block setting %} {{super()}} {% endblock %}
+
+{% block selectSection %} {{super()}} {% endblock %}
+
+{% block displaySection %}
+    <div class="displayWeather">
+        <div class="displayTitle" style="font-size: 20px;">{{location}}</div>
+        
+        <div class="displayInformation">
+            <div class="displayPart">
+                <div class="part">時段</div>
+                <div class="part">天氣現象</div>
+                <div class="part">降雨機率</div>
+                <div class="part">最低溫度</div>
+                <div class="part">最高溫度</div>
+            </div>
+            {% for i in range(3) %}
+            <div class="displayPart">
+                <div class="part"> {{time[i]}} </div>
+                <div class="part"> {{data[0][i]}} </div>
+                <div class="part"> {{data[1][i]}}% </div>
+                <div class="part"> {{data[2][i]}}°C </div>
+                <div class="part"> {{data[3][i]}}°C </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+    
+{% endblock %}

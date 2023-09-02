@@ -1,0 +1,54 @@
+.selectWeather {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: 25%;
+    left: 615.5px;
+}
+
+.selectBar {
+    margin: 5px;
+}
+
+.displayWeather {
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 400px;
+    left: 218px;
+    width: 1000px;
+}
+
+.displayTitle {
+    border-bottom: 2px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.displayInformation {
+    display: flex;
+    flex-direction: row;
+}
+
+.displayPart {
+    text-align: center;
+    width: 100px;
+    flex-grow: 4;
+}
+
+.displayPart:first-child {
+    flex-grow: 1;
+}
+
+.part {
+    border: 2px solid black;
+    border-right: none;
+    margin: -2px;
+}
