@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template, redirect, url_for
 
-from src.functions import getWeatherData, extractWeatherData, splitWeatherData, extractWeatherTime, splitWeatherTime
+from .functions import getWeatherData, extractWeatherData, splitWeatherData, extractWeatherTime, splitWeatherTime
 
 app = Flask(__name__)
 
